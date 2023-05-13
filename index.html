@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="Snake-logo.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Roboto Mono', monospace;
+        }
+        h1 {
+            color: crimson;
+            margin-bottom: 2.5rem;
+        }
+        canvas {
+            border: 3px solid crimson;
+        }
+		
+		body{background-color:#101010; sans-serif;padding: 25px} a{text-decoration:none;}
+body::before{content:"\00A9  Justin The coder";color:white;opacity:.3;font-size:2vw;position:fixed;bottom:25px;left:25px;}
+#bodyblur{opacity:.6;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.3);z-index:-1;transition:all 1s ease;}
+@keyframes jj{0%  {transform: scale(1.1);} 50% {transform: scale(1.2);} 100% {transform: scale(1.1);}}
+#bodyblur img{animation-name:jj;animation-duration: 7s;animation-iteration-count: infinite;}
+
+    </style>
+</head>  
+<body><div id="bodyblur"><img id="wallpaper" src="Snake-bg.png" width="100%" height="100%"/></div>
+    <h1>Snake Game</h1>
+    <canvas id="board"></canvas>
+    <script src="game.js"></script>
+</body>
+</html>
